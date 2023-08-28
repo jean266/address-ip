@@ -12,7 +12,6 @@ Esta es una solución al [desafío del seguimiento de direcciones IP en Frontend
       - [Diseño Mobile](#diseño-mobile)
       - [Diseño Desktop](#diseño-desktop)
     - [Enlaces](#enlaces)
-  - [Mi proceso](#mi-proceso)
     - [Construido con](#construido-con)
   - [Autor](#autor)
 
@@ -30,17 +29,15 @@ Los usuarios deberían poder:
 ### Captura de pantalla
 
 #### Diseño Mobile
-![](./screenshot-mobile.js.png)
+![](./screenshot-mobile.png)
 
 #### Diseño Desktop 
 ![](./screenshot-desktop.png)
 
 ### Enlaces
 
-- URL de la solución: [Agregue la URL de la solución aquí](https://your-solution-url.com)
-- URL del sitio en vivo: [Agregue la URL del sitio en vivo aquí](https://your-live-site-url.com)
-
-## Mi proceso
+- URL de la solución: [Github](https://github.com/jean266/address-ip)
+- URL del sitio en vivo: [Vencel](https://address-ip.vercel.app/)
 
 ### Construido con
 
