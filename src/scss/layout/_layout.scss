@@ -1,0 +1,140 @@
+
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+// header 
+.header {
+    background-image: url(../../../public/img/pattern-bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 30rem;
+    
+    @include m.desktop {
+        background-image: url(../../../public/img/pattern-bg-desktop.png);
+        height: 35rem;
+    }
+    
+    .header_title {
+        color: v.$white;
+        font-size: 2.5rem;
+        font-weight: v.$semiRegular;
+        margin-top: 0;
+        padding-top: 1.5rem;
+        margin-bottom: 1rem;
+
+        @include m.desktop {
+            padding-top: 2rem;
+            font-size: 3rem;
+        }
+    } 
+}
+
+form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between; 
+
+    @include m.desktop {
+        max-width: 70rem;
+    }
+
+    input {
+        padding: 1.5rem 2rem;
+        border: none;
+        border-top-left-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+        width: 100%;
+
+        &:focus-visible {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    button {
+        padding: 1.5rem 2rem;
+        border: none;
+        background-color: v.$black;
+        border-top-right-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+
+        @include m.desktop {
+            padding: 2rem;
+        }
+
+        &:hover {
+            cursor: pointer;
+            background-color: v.$veryDarkGray;
+        }
+    }
+}
+
+// Infomacion de la consulta
+.header_info {
+    position: absolute;
+    width: 90%;
+    background-color: v.$white;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0px 1px 12px #0000002e;
+    top: 12rem;
+    z-index: 1000;
+
+    @include m.desktop {
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem 3rem;
+        top: 15rem;
+        max-width: 110rem;
+    }
+
+    .header_info-r {
+        text-align: center;
+        padding: 0;
+
+        @include m.desktop {
+            width: 100%;
+            border-right: 1px solid lighten(v.$darkGray, 30);
+            text-align: left;
+            padding: 0 4rem;
+
+            &:last-child {
+                border: none;
+            }
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: v.$bold;
+            color: v.$darkGray;
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+            margin: 0;
+
+            @include m.desktop {
+                text-align: left;
+                margin-bottom: 1rem;
+            }
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: v.$semiRegular;
+            margin-bottom: 1rem;
+            
+            @include m.desktop {
+                font-size: 2.5rem;
+                margin-bottom: 0;
+                line-height: 3.5rem;
+            }
+        }
+    }
+}
