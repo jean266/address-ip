@@ -55,6 +55,10 @@ Los usuarios deberían poder:
 - [leafletjs](https://leafletjs.com/) - Genera el mapa
 - [ipwho](http://ipwho.is/) - consulta la informacion de la IP address
 
+- URL de la solución: [Github](https://github.com/jean266/address-ip)
+- URL del sitio en vivo: [vercel](https://address-ip-mykt.vercel.app/)
+
+
 ## Autor
 
 - Mentor de frontend - [@jean266](https://www.frontendmentor.io/profile/jean266)
