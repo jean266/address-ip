@@ -4,7 +4,7 @@
 
 // header 
 .header {
-    background-image: url(../../../public/img/pattern-bg-mobile.png);
+    background-image: url(public/img/pattern-bg-mobile.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -14,7 +14,7 @@
     height: 30rem;
     
     @include m.desktop {
-        background-image: url(../../../public/img/pattern-bg-desktop.png);
+        background-image: url(public/img/pattern-bg-desktop.png);
         height: 35rem;
     }
     
